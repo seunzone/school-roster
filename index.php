@@ -3,7 +3,7 @@
 <head>
 <!-- CSS FILES -->
 <link rel="stylesheet" href="css/main.css"/>
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lobster" rel="stylesheet"> 
+
 
 </head>
 
@@ -11,43 +11,62 @@
 <body>
 <hr>
 	
-	<div class="myDiv" align="center">
+	<div class="mydiv" align="center">
 
 
-	<?php echo date('d/m/Y'); ?> <br>
-	<img src="logo.png">
-		<h1>The King's High School</h1>
-			<form action="check.php">
-				<table>
-					  <tr>
-						<th>Names</th>
-						<th>Duty</th>
-						<th>Status</th>
-					  </tr>
-					  <tr>
-						<td>Seun Daramola</td>
-						<td>Co-ordinate the Class</td>
-						<td><input type="checkbox"></td>
-					  </tr>
-					  <tr>
-						<td>Emeka Bright</td>
-						<td>Sweep Classroom</td>
-						<td><input type="checkbox"></td>
-					  </tr>
-					  <tr>
-						<td>Obinna Akunne</td>
-						<td>Wash the toilet</td>
-						<td><input type="checkbox"></td>
-					  </tr>
-					  <tr>
-						<td>Ebenezer Obey</td>
-						<td>Clean the Board</td>
-						<td><input type="checkbox"></td>
-					  </tr>
-				</table><br>
+	 
+	
+		<h1>Enter Students Results Here</h1>
+			<form action="logics/save_duty.php" method="POST" class="form">
+				<label>
+					Duty 1 (Student name)
+				</label>
+				<input type="text" name="student1">
+				<label>
+					Duty 1 
+				</label>
+				<input type="text" name="duty1"><br><br>
 
-				<button id="myBtn">Submit Roster</button>
+				<label>
+					Duty 2 (Student name)
+				</label>
+				<input type="text" name="student2">
+				<label>
+					Duty 2 
+				</label>
+				<input type="text" name="duty2"><br><br>
+
+				<label>
+					Duty 3 (Student name)
+				</label>
+				<input type="text" name="student3">
+				<label>
+					Duty 3
+				</label>
+				<input type="text" name="duty3"><br><br>
+
+				<label>
+					Duty 4 (Student name)
+				</label>
+				<input type="text" name="student4"> 
+				<label>
+					Duty 4 
+				</label>
+				<input type="text" name="duty4"><br><br>
+
+				<label>
+					Duty 5 (Student name)
+				</label>
+				<input type="text" name="student5">
+				<label>
+					Duty 5 
+				</label>
+				<input type="text" name="duty5"><br><br>
+
+				<button class="myButton">Submit Tasks</button>
+				<a href="/movement/school-roster/check.php"> &nbsp &nbsp &nbsp<input type="button" name="" class="myButton" value="Go to tasks"></button></a>
 			</form>
+
 		<hr>
 			
 		</div>
